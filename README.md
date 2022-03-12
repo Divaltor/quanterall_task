@@ -1,3 +1,15 @@
+## Installation
+
+1. Install [Python 3.10](https://www.python.org/downloads/release/python-3102/)
+2. Install [Poetry](https://python-poetry.org/docs/#installation)
+3. Run command `poetry install`
+4. Start script with command `poetry run python main.py`
+5. Open the file `country.db` with any database editor (DBeaver, for example). **Done**
+
+## Notes
+For this particular task, I decided not to write tests, because there is practically **nothing to test** here. Of course, I can write unit\functional tests for some functions with mock data, but there is little sense in the current variant
+
+
 # Задача
 - От популациите на държавите (data/country_populations.csv) извадете популацията на всяка страна (всички, които не започват с "OWID_" префикс) за 2020 г. 
 
