@@ -57,7 +57,7 @@ def parse_countries(file: str) -> Countries:
     return parsed_countries
 
 
-def fill_matches(parsed_countries: Countries):
+def search_vaccinated_population(parsed_countries: Countries):
     """
     Find most actual count for vaccinated population and modify passed data.
 
@@ -119,7 +119,7 @@ def main():
     parsed_countries = parse_countries('data/country_populations.csv')
 
     # Then, find actual date about vaccinated population and assign this data to parsed countries above
-    matches = fill_matches(parsed_countries)
+    matches = search_vaccinated_population(parsed_countries)
 
     # Load whole parsed data into database with bulk insert
     load_into_database(list(matches.values()))
